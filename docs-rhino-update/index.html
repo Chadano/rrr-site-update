@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rolling Rhino Remix | Docs</title>
+        <title>Rolling Rhino Remix | rhino-update Documentation</title>
         <!-- SEO -->
         <meta property="og:title" content="Rolling Rhino Remix" />
         <meta property="og:locale" content="en_US" />
@@ -43,23 +43,11 @@
         <!-- Information -->
         <div class="information">
             <div class="content">
-               <p>The Rolling Rhino Documentation covers how to install and correctly use the Rolling Rhino Remix operating system as well as the tools created by the Rolling Rhino Remix project.</p>
-               <h3>Get started</h3>
-               <p>
-                   &bull; <a href="https://rollingrhino.org/docs-quickstart">Quick Start Guide</a> <br/>
-                   &bull; <a href="https://rollingrhino.org/docs-install">How to install Rolling Rhino Remix</a>
-               </p>
-               <h3>Tools included in Rolling Rhino Remix</h3>
-               <p>
-                   &bull; <a href="https://rollingrhino.org/docs-rhino-init">rhino-init</a> <br/>
-                   &bull; <a href="https://rollingrhino.org/docs-rhino-update">rhino-update</a> <br/>
-                   &bull; <a href="https://rollingrhino.org/docs-rhino-config">rhino-config</a> <br/>
-                   &bull; <a href="https://rollingrhino.org/docs-pacstall">Pacstall</a> <br/>
-               </p>
-               <h3>How to create your own image of Rolling Rhino Remix</h3>
-               <p>
-                   &bull; <a href="https://github.com/rollingrhinoremix/creatio_script">How to create your own image of Rolling Rhino Remix</a>
-               </p>
+                <h1>Rolling Rhino Remix - rhino-init Documentation</h1>
+                <p>The rhino-update command will be the command that you will use to update your system. It will update your system via apt as well as provide the latest tools that we develop. The update utility is largely configured by <a href="https://rollingrhino.org/docs-rhino-config">rhino-config</a> which allows for you to enable additional settings such as the automatic installation of the mainline Linux kernel and the removal of snapd from the system. Both of these settings can be read about more in the <a href="https://rollingrhino.org/docs-rhino-config">rhino-config documentation</a>. This tool was developed so that we are able to easily provide updates to the Rolling Rhino Remix desktop, as well as provide the latest Linux kernel binaries and other configurations. It is recommended that you use this command as opposed to <code>apt update && apt upgrade</code> that is more common on standard Ubuntu desktops.</p>
+                <p>&bull; Rhino Update will update all applications available in your package repositories. If you have not disabled Snaps via <code>rhino-config</code> then all Snaps will be automatically updated as well.</p>
+                <p>To run rhino-update you will need to open a new terminal and run <code>rhino-update</code>, once you have done this please reboot your system.</p>
+                <p>If the script is unable to be completed then you may be unable to run rhino-update again due to the update directory already existing. To fix this just type <code>rm -rf ~/rhinoupdate</code> and then retry.</p>
             </div>
         </div>
 
