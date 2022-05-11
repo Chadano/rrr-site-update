@@ -43,12 +43,12 @@ a:hover {
 
 code {
     border-style: solid;
-    border-width: 2px;
-    border-color: var(--heading);
-    border-radius: 0px;
+    border-width: 1px;
+    border-color: #2d2d2d;
+    border-radius: 8px;
     color: var(--heading);
     background-color: var(--background);
-    padding: 1px;
+    padding: 2px;
     font-family: monospace;
 }
 
